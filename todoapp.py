@@ -12,7 +12,7 @@ from google.appengine.ext.webapp.util import run_wsgi_app
 from google.appengine.ext.webapp import template
 
 # register custom filters
-template.register_template_library('customfilters')
+template.register_template_library('utils.customfilters')
 
 class TimezoneInfo(db.Model):
     timezoneinfo = db.StringProperty(default='')
